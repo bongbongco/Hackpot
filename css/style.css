@@ -979,6 +979,10 @@
 			margin: 1.5em 0 0 0;
 		}
 
+		#banner .signup {
+			margin:0 auto;
+		}
+
 		#banner .actions {
 			margin: 3em 0 0 0;
 		}
@@ -992,7 +996,8 @@
 			#banner .button:hover {
 				background-color: rgba(255, 255, 255, 0.2);
 			}
-
+			
+		
 /* Wrapper */
 
 	.wrapper {
