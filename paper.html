@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--
+	Interphase by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hackpot</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Hackpot</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Practice</a></li>
+						<li><a href="index.html">Complete</a></li>
+						<li><a href="index.html">Group</a></li>
+						<li><a href="index.html">Rank</a></li>
+						<li><a href="index.html">Challenge</a></li>
+						<li><input type="submit" value="Login" class="special small" /></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<section id="main" class="wrapper">
+				<div class="container">
+					<header class="major">
+						<h2>자바스크립트 - XSS (Cross Site Scripting)</h2>
+						<p>크로스 사이트 스크립팅은 blah blah blah</p>
+					</header>
+
+					<!-- Text -->
+						<section>
+							<h3>문제 설명</h3>
+							<p>답은 브라우저에 있다. 사이트 간 스크립팅(또는 크로스 사이트 스크립팅, 영문 명칭 cross-site scripting, 영문 약어 XSS)은 웹 애플리케이션에서 많이 나타나는 취약점의 하나로 웹사이트 관리자가 아닌 이가 웹 페이지에 악성 스크립트를 삽입할 수 있는 취약점이다.</p>
+
+							<hr />
+
+							<h4>채점 방식</h4>
+							<blockquote>답안을 제출하는 방법은 blah blah blah. 사이트 간 스크립팅(또는 크로스 사이트 스크립팅, 영문 명칭 cross-site scripting, 영문 약어 XSS)은 웹 애플리케이션에서 많이 나타나는 취약점의 하나로 웹사이트 관리자가 아닌 이가 웹 페이지에 악성 스크립트를 삽입할 수 있는 취약점이다.</blockquote>
+								<section>
+									<h3>답안 제출</h3>
+									<form method="post" action="#">
+										<div class="row">
+											<section class="6u 12u$(small)">
+												<input type="text" name="name" id="name" value="" placeholder="Name" />
+											</section>
+											<section class="6u$ 12u$(small)">
+												<input type="submit" value="제출" class="special" />
+											</section>
+										</div>
+									</form>
+								</section>
+								<h4>Hint</h4>
+								<pre>
+									<code>
+Blah Blah
+alert(document.cookie)
+								</code>
+							</pre>
+						</section>
+
+					<!-- Lists -->
+						<section>
+							<div class="row">
+								<div class="6u 12u(small)">
+									<h4>주의 사항</h4>
+									<ul>
+										<li>딴 짓 하지 마세요.</li>
+										<li>무작위 대입 공격하지 마세요.</li>
+										<li>답안 공개하지 마세요.</li>
+									</ul>
+								</div>
+								<div class="6u 12u(small)">
+
+									<h4>Hackpot Tip</h4>
+									<ol>
+										<li>그룹 학습을 진행하세요.</li>
+										<li>친구들과 경쟁하세요.</li>
+										<li>SNS에 당신의 성공을 알리세요.</li>
+									</ol>
+
+									<h4>자랑하기</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon rounded fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+
+								</div>
+							</div>
+						</section>
+						<section >
+							<h3>질문 등록하기</h3>
+							<form method="post" action="#">
+								<div class="row uniform">
+									<div class="12u$">
+										<div class="select-wrapper">
+											<select name="category" id="category">
+												<option value="">- Category -</option>
+												<option value="1">채점 오류</option>
+												<option value="1">문제 오류</option>
+												<option value="1">설명 오류</option>
+												<option value="1">기타 의견</option>
+											</select>
+										</div>
+									</div>
+									<br/>
+									<div class="12u$">
+										<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="12u$">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="4u 6u(medium) 12u$(small)">
+							<h3>Hackpot</h3>
+							<p>Hackpot과 함께 분석적 사고를 길러보세요.</p>
+							<ul class="alt">
+								<li><a href="#">소개</a></li>
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">튜토리얼</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</section>
+						<section class="4u 6u$(medium) 12u$(small)">
+							<h3>Crehacktive Lab</h3>
+							<p>Crehacktive Lab의 서비스를 이용하세요.</p>
+							<ul class="alt">
+								<li><a href="http://www.hackple.co.kr/bbs/group.php?gr_id=lab">About us</a></li>
+								<li><a href="#">Our vision</a></li>
+								<li><a href="http://www.hackple.co.kr">Hackple</a></li>
+								<li><a href="#">메일링 서비스</a></li>
+							</ul>
+						</section>
+						<section class="4u$ 12u$(medium) 12u$(small)">
+							<h3>Contact Us</h3>
+							<ul class="icons">
+								<li><a href="https://twitter.com/7IoOFuqnigJStmo" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/HackP1e/" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+							</ul>
+							<ul class="tabular">
+								<li>
+									<h3>Address</h3>
+									서울특별시 관악구 봉천동<br>
+									쫄쫄이집, 209호
+								</li>
+								<li>
+									<h3>Mail</h3>
+									<a href="#">admin@gmail.com</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									(02) 000-0000
+								</li>
+							</ul>
+						</section>
+					</div>
+					<ul class="copyright">
+						<li>Producted by the <a href="http://www.hackple.co.kr/bbs/group.php?gr_id=lab">Crehacktive Lab</a></li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+	</body>
+</html>
